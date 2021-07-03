@@ -13,12 +13,12 @@ public class BaseSteps {
         this.selenium=selenium;
     }
 
-    @Before
+    @Before("@FeatureSetup")
     public void setUp(){
         this.webDriverUtils.launchBrowser();
     }
 
-    @After
+    @After("@FeatureSetup")
     public void tearDown(){
         this.webDriverUtils.tearDown();
     }

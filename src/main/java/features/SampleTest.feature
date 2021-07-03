@@ -1,3 +1,4 @@
+@FeatureSetup
 Feature: First Feature
 Scenario: Google search
   Given the user opens the google page
